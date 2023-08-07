@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include 'bootstrap.html' %}
+  <title>Decide</title>
+  <style>
+    body {
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .analyze {
+      display: block;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      font-size: 24px;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      width: 100%;
+      max-width: 300px;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .analyze:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  {% include 'nav_decide.html' %}
+  <div class="container">
+    <a href="/sentiment_analyzer1" class="analyze">Analyze Sentiment of YouTube Comments</a>
+    <a href="/sentiment_analyzer" class="analyze">Analyze Sentiment of Twitter Tweets</a>
+  </div>
+  {% include 'footer.html' %}
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

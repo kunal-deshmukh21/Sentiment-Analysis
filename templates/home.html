@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+{% include 'bootstrap.html' %}
+  <title>Sentiment Analysis of Social Media</title>
+
+</head>
+
+<body>
+
+  {% include 'nav_home.html' %}
+
+  <div class="container-fluid">
+    <div>
+      <h1 class="text-center" style="margin-top: 10px; margin-bottom: 10px;">Sentiment Analysis on Social Media</h1>
+    </div>
+    <div>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/images/sentiment_1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/images/youtubepic.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="how-it-works" class="py-5">
+    <div class="container">
+        <h2 class="text-center">How Sentiment Analysis Works</h2>
+        <p>
+            Sentiment analysis, also known as opinion mining, is a natural language processing (NLP)
+            technique used to determine the sentiment or emotional tone expressed in a piece of text,
+            such as tweets, comments, reviews, or articles. It aims to identify whether the expressed
+            sentiment is positive, negative, or neutral.
+        </p>
+        <p>
+            The process of sentiment analysis typically involves the following steps:
+        </p>
+        <ul>
+            <li>Text Preprocessing</li>
+            <li>Sentiment Lexicon</li>
+            <li>Sentiment Scoring</li>
+            <li>Sentiment Classification</li>
+            <li>Machine Learning (Optional)</li>
+            <li>Result Visualization</li>
+        </ul>
+        <p>
+            It is essential to note that sentiment analysis is a challenging task due to the complexity
+            of human language and context. The accuracy of sentiment analysis can vary depending on the
+            quality of the sentiment lexicon, the preprocessing techniques used, and the context in which
+            the text is analyzed. Therefore, continuous refinement and validation of sentiment analysis
+            models are crucial for reliable results.
+        </p>
+        <p>
+            Sentiment analysis has numerous real-world applications, such as market research, brand
+            monitoring, customer feedback analysis, social media monitoring, political analysis, and
+            reputation management.
+        </p>
+    </div>
+</section>
+
+  {% include 'footer.html' %}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

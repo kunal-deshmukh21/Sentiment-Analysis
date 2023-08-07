@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'bootstrap.html' %}
+    <title>Result</title>
+  
+</head>
+
+<body>
+    {% include 'nav_result.html' %}
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-12 text-center mb-4">
+                <h3>How people are reacting to {{video_final_words}} by analyzing {{comments}} Comments</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">General Report</h5>
+                        <p class="card-text">The Average Sentiment is {{fpolarity}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Sentiment Polarity</h5>
+                        <p class="card-text">The sentiment polarity is {{polarity}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mt-4">Detailed Report</h1>
+                <ul class="list-group">
+                    <li class="list-group-item">{{spositive}}% people thought it was strongly positive</li>
+                    <li class="list-group-item">{{positive}}% people thought it was positive</li>
+                    <li class="list-group-item">{{wpositive}}% people thought it was weakly positive</li>
+                    <li class="list-group-item">{{neutral}}% people thought it was neutral</li>
+                    <li class="list-group-item">{{negative}}% people thought it was negative</li>
+                    <li class="list-group-item">{{wnegative}}% people thought it was weakly negative</li>
+                    <li class="list-group-item">{{snegative}}% people thought it was strongly negative</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
