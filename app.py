@@ -78,7 +78,7 @@ def register():
         session['password'] = data['password']  
 
         subject = 'OTP Verification'
-        body = f'Your OTP for registration: {otp}'
+        body = f'Your OTP for registration is: {otp}'
         to_email = data['email']
 
         if otp_manager.send_email(subject, body, to_email):
