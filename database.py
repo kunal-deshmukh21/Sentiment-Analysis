@@ -25,7 +25,7 @@ class UserDatabase:
             Column('id', Integer, primary_key=True, autoincrement=True),
             Column('name', VARCHAR(250), nullable=False),
             Column('email', VARCHAR(250), nullable=False),
-            Column('password', VARCHAR(2000), nullable=False),
+            Column('password', VARCHAR(500), nullable=False),
         )
 
     def add_users_to_db(self, data):
